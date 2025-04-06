@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación Psicológica Infantil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+        .test-section {
+            background-color: #f7fafc;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        .test-title {
+            color: #4a5568;
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+        .response-item {
+            margin-bottom: 0.75rem;
+        }
+        .correct-response {
+            color: #16a34a;
+            font-weight: 600;
+        }
+        .incorrect-response {
+            color: #dc2626;
+            font-weight: 600;
+        }
+        .report-text {
+            color: #374151;
+            font-size: 1rem;
+            line-height: 1.75;
+        }
+        .report-highlight {
+            font-weight: 600;
+            color: #1f2937;
+        }
+        .case-card {
+            transition: transform 0.2s;
+        }
+        .case-card:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-8">
+    <h1 class="text-3xl font-bold text-center text-blue-700 mb-8">Evaluación Psicológica Infantil</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded-lg shadow-md p-6 case-card">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Caso 1: Jessi Tapia - TIP</h2>
+            <p class="text-gray-700 mb-2"><span class="font-semibold">Nombre:</span> Jessi Tapia</p>
+            <p class="text-gray-700 mb-2"><span class="font-semibold">Edad:</span> 10 años</p>
+            <p class="text-gray-700 mb-2"><span class="font-semibold">Grado:</span> 5to</p>
+            <p class="text-gray-700 mb-2"><span class="font-semibold">Centro Educativo:</span> Escuela Básica Vitalina Mordan De Cruz</p>
+            <p class="text-gray-700 mb-2"><span class="font-semibold">Ubicación:</span> Calle D esquina N (Andrés Boca Chica)</p>
+            <p class="text-gray-700 mb-2"><span class="font-semibold">Teléfono del responsable:</span> 829 921 8729</p>
+            <h3 class="text-lg font-semibold text-gray-800 mt-4 mb-2">Historial Clínico:</h3>
+            <p class="text-gray-700 mb-4">
+                Jessi es derivada por su maestra debido a dificultades en la lectura y escritura. Su historial de desarrollo temprano es normal, sin problemas médicos significativos. En la escuela, muestra dificultades para seguir instrucciones y completar tareas escritas. Sus padres reportan que es una niña activa y distraída en casa. No hay antecedentes familiares de dificultades de aprendizaje.
+            </p>
+            <h3 class="text-lg font-semibold text-gray-800 mt-4 mb-2">Pruebas Aplicadas:</h3>
+            <ul class="list-disc list-inside text-gray-700 mb-4">
+                <li>TIP (Test de Inteligencia para Niños): Evalúa capacidades cognitivas en tres áreas:
+                    <ol class="list-decimal list-inside ml-4 mt-1">
+                        <li><span class="font-semibold">Comprensión Verbal:</span> Capacidad para entender y expresar conceptos verbales mediante definiciones y explicaciones.</li>
+                        <li><span class="font-semibold">Razonamiento Perceptual:</span> Habilidad para analizar patrones visuales y resolver problemas no verbales.</li>
+                        <li><span class="font-semibold">Memoria de Trabajo:</span> Capacidad para retener y manipular información a corto plazo.</li>
+                    </ol>
+                </li>
+            </ul>
+            <div class="test-section">
+                <h4 class="test-title">Test de Inteligencia (TIP) - Resultados Detallados:</h4>
+                <ol class="list-decimal list-inside text-gray-700">
+                    <li class="response-item">Comprensión Verbal:
+                        <ol type="a" class="list-lower-alpha list-inside ml-4">
+                            <li class="correct-response">¿Qué es un "amigo"?: "Alguien con quien juegas y hablas".</li>
+                            <li class="incorrect-response">Explica: "El que mucho abarca, poco aprieta". "No sé qué es abarca".</li>
+                            <li class="correct-response">¿Qué significa "sol"?: "La luz del día".</li>
+                            <li class="incorrect-response">¿Qué es "esperanza"?: "Algo de rezar".</li>
+                            <li class="correct-response">Explica: "Más vale tarde que nunca". "Es mejor hacer algo aunque sea tarde".</li>
+                        </ol>
+                    </li>
+                    <li class="response-item">Razonamiento Perceptual:
+                        <ol type="a" class="list-lower-alpha list-inside ml-4">
+                            <li class="correct-response">(Serie: ○ ● ○ ●, ¿qué sigue?). Jessi eligió "○".</li>
+                            <li class="incorrect-response">(Rompecabezas incompleto de un árbol). Jessi seleccionó una pieza incorrecta.</li>
+                            <li class="correct-response">(Identificar forma diferente entre 5 figuras). Jessi acertó.</li>
+                            <li class="incorrect-response">(Completar patrón: ★ ☆ ★ ☆). Jessi eligió "★" (incorrecto).</li>
+                            <li class="correct-response">(Señalar error en dibujo de una casa). Jessi identificó el error.</li>
+                        </ol>
+                    </li>
+                    <li class="response-item">Memoria de Trabajo:
+                        <ol type="a" class="list-lower-alpha list-inside ml-4">
+                            <li class="incorrect-response">Repite: 4-7-2-9 en orden inverso. Jessi dijo: "9-2-4-7".</li>
+                            <li class="correct-response">Recuerda 4 imágenes (gato, casa, árbol, sol). Jessi las nombró todas.</li>
+                            <li class="incorrect-response">Repite: "luz, mesa, flor, río". Jessi dijo: "luz, mesa, río".</li>
+                            <li class="correct-response">Señala 4 objetos ocultos. Jessi acertó todos.</li>
+                            <li class="incorrect-response">Suma 1 a: 3-5-2. Jessi dijo: "3-6-2".</li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mt-4 mb-2">Informe de Resultados:</h3>
+            <p class="report-text">
+                Jessi Tapia, de 10 años, presenta un perfil cognitivo heterogéneo en el TIP, con fortalezas y debilidades que afectan su rendimiento académico. En <span class="report-highlight">Comprensión Verbal</span>, muestra un desempeño mixto: responde bien a conceptos concretos ("amigo": "Alguien con quien juegas y hablas"; "sol": "La luz del día") y explica refranes simples ("Más vale tarde que nunca"), pero falla en términos abstractos ("esperanza": "Algo de rezar") y refranes complejos ("El que mucho abarca..."), lo que sugiere un vocabulario básico y dificultades para procesar ideas más allá de lo literal. Esto podría dificultarle comprender textos escolares o seguir discusiones abstractas. En <span class="report-highlight">Razonamiento Perceptual</span>, acierta en tareas de identificación (formas diferentes, errores en dibujos) y patrones simples, pero falla en actividades que requieren integración espacial (rompecabezas, patrones complejos), indicando una atención visual variable que podría afectar tareas como copiar figuras o resolver problemas gráficos. En <span class="report-highlight">Memoria de Trabajo</span>, destaca en memoria visual (recordó imágenes y ubicaciones correctamente), pero presenta errores consistentes en memoria auditiva y manipulación mental (invirtió números, omitió palabras, falló en cálculos), reflejando una debilidad en el procesamiento auditivo-secuencial que podría limitar su capacidad para seguir instrucciones orales o realizar operaciones mentales.<br><br>
+                Estas discrepancias explican sus dificultades en lectura y escritura: su fortaleza visual le permite retener imágenes, pero las limitaciones verbales y auditivas dificultan la comprensión de textos largos o la retención de explicaciones habladas, lo que podría generar distracción o frustración en clase. Por ejemplo, podría olvidar pasos de una tarea oral o confundir palabras al escribir. Se recomienda:
+                <ol class="list-decimal list-inside ml-4 mt-2">
+                    <li>Evaluación psicopedagógica para descartar dislexia o problemas de procesamiento auditivo.</li>
+                    <li>Terapia del lenguaje con enfoque en vocabulario abstracto y comprensión lectora (ej., cuentos con preguntas).</li>
+                    <li>Estrategias escolares: instrucciones escritas con apoyos visuales y tareas cortas.</li>
+                    <li>Ejercicios de memoria auditiva (repetición de secuencias, juegos como "Simón dice").</li>
+                </ol>
+            </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 case-card">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Caso 2: Yonalkis Pirón Alfonsica - TIP</h2>
+            <p class="text-gray-700 mb-2"><span class="font-semibold">Nombre:</span> Yonalkis Pirón Alfonsica</p>
+            <p class="text-gray-700 mb-2"><span class="font-semibold">Edad:</span> 10 años</p>
+            <p class="text-gray-700 mb-2"><span class="font-semibold">Grado:</span> 5to</p>
+            <p class="text-gray-700 mb-2"><span class="font-semibold">Centro Educativo:</span> Escuela Básica Vitalina Mordan De Cruz</p>
+            <p class="text-gray-700 mb-2"><span class="font-semibold">Ubicación:</span> Barrio Azul Andres Boca Chica</p>
+            <p class="text-gray-700 mb-2"><span class="font-semibold">Teléfono del responsable:</span> </p>
+            <h3 class="text-lg font-semibold text-gray-800 mt-4 mb-2">Historial Clínico:</h3>
+            <p class="text-gray-700 mb-4">
+                Yonalkis muestra posibles dificultades conductuales en la escuela, incluyendo problemas para seguir reglas y completar tareas. Se observa impulsividad y distracción. No se reportan problemas médicos significativos en su historial de desarrollo.
+            </p>
+            <h3 class="text-lg font-semibold text-gray-800 mt-4 mb-2">Pruebas Aplicadas:</h3>
+            <ul class="list-disc list-inside text-gray-700 mb-4">
+                <li>TIP (Test de Inteligencia para Niños): Evalúa capacidades cognitivas en tres áreas:
+                    <ol class="list-decimal list-inside ml-4 mt-1">
+                        <li><span class="font-semibold">Comprensión Verbal:</span> Evalúa la comprensión y expresión de conceptos verbales.</li>
+                        <li><span class="font-semibold">Razonamiento Perceptual:</span> Mide la habilidad para resolver problemas visuales.</li>
+                        <li><span class="font-semibold">Memoria de Trabajo:</span> Examina la retención y manipulación de información.</li>
+                    </ol>
+                </li>
+            </ul>
+            <div class="test-section">
+                <h4 class="test-title">Test de Inteligencia (TIP) - Resultados Detallados:</h4>
+                <ol class="list-decimal list-inside text-gray-700">
+                    <li class="response-item">Comprensión Verbal:
+                        <ol type="a" class="list-lower-alpha list-inside ml-4">
+                            <li class="correct-response">¿Qué es una "mesa"?: "Donde comes o trabajas".</li>
+                            <li class="incorrect-response">Explica: "A quien madruga, Dios lo ayuda". "No sé".</li>
+                            <li class="incorrect-response">¿Qué significa "paz"?: "Algo de la iglesia".</li>
+                            <li class="correct-response">¿Qué es "camino"?: "Por donde pasas".</li>
+                            <li class="incorrect-response">Explica: "No hay mal que por bien no venga". "No entiendo".</li>
+                        </ol>
+                    </li>
+                    <li class="response-item">Razonamiento Perceptual:
+                        <ol type="a" class="list-lower-alpha list-inside ml-4">
+                            <li class="incorrect-response">(Serie: ■ □ ■ □, ¿qué sigue?). Yonalkis eligió "■" (incorrecto).</li>
+                            <li class="incorrect-response">(Completar dibujo de una casa). Yonalkis seleccionó una pieza errónea.</li>
+                            <li class="correct-response">(Identificar patrón de colores: rojo-azul-rojo). Yonalkis acertó.</li>
+                            <li class="incorrect-response">(Rompecabezas de un carro). Yonalkis falló.</li>
+                            <li class="correct-response">(Señalar diferencia en 5 figuras). Yonalkis acertó.</li>
+                        </ol>
+                    </li>
+                    <li class="response-item">Memoria de Trabajo:
+                        <ol type="a" class="list-lower-alpha list-inside ml-4">
+                            <li class="incorrect-response">Repite: 5-3-8-1. Yonalkis dijo: "5-8-1".</li>
+                            <li class="incorrect-response">Recuerda: "sol, río, luna, flor". Yonalkis dijo: "sol, luna".</li>
+                            <li class="correct-response">Señala 4 objetos ocultos. Yonalkis acertó 3 de 4.</li>
+                            <li class="incorrect-response">Repite: 2-6-4 en orden inverso. Yonalkis dijo: "4-2-6".</li>
+                            <li class="correct-response">Suma 1 a: 1-3-5. Yonalkis dijo: "2-4-6".</li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mt-4 mb-2">Informe de Resultados:</h3>
+            <p class="report-text">
+                Yonalkis Pirón Alfonsica, de 10 años, exhibe un desempeño bajo y variable en el TIP, lo que refleja dificultades cognitivas relacionadas con sus problemas conductuales. En <span class="report-highlight">Comprensión Verbal</span>, acierta en definiciones concretas ("mesa": "Donde comes o trabajas"; "camino": "Por donde pasas"), pero falla en conceptos abstractos ("paz": "Algo de la iglesia") y refranes ("A quien madruga...", "No hay mal..."), indicando un vocabulario limitado y problemas para procesar ideas complejas, lo que podría dificultarle entender lecciones o textos narrativos. En <span class="report-highlight">Razonamiento Perceptual</span>, su rendimiento es inconsistente: acierta en tareas simples (patrones de colores, diferencias), pero falla en actividades de ensamblaje y secuencias complejas, sugiriendo una atención visual deficiente y dificultades para organizar información espacial, afectando tareas como dibujar o resolver problemas gráficos. En <span class="report-highlight">Memoria de Trabajo</span>, muestra debilidad generalizada en memoria auditiva (omitió palabras y números, invirtió secuencias), con aciertos parciales en memoria visual y cálculos simples, lo que indica un procesamiento auditivo limitado que podría impedirle retener instrucciones orales o realizar operaciones mentales.<br><br>
+                Estas limitaciones contribuyen a su impulsividad y distracción: su incapacidad para seguir reglas o completar tareas podría derivar de olvidar pasos o perder el foco, generando frustración y reacciones impulsivas. Se recomienda:
+                <ol class="list-decimal list-inside ml-4 mt-2">
+                    <li>Evaluación neuropsicológica para explorar TDAH o dificultades ejecutivas.</li>
+                    <li>Intervención conductual con técnicas de pausa y refuerzos positivos.</li>
+                    <li>Apoyo pedagógico con instrucciones breves, visuales y descansos frecuentes.</li>
+                    <li>Ejercicios de memoria (juegos de secuencias, emparejamiento).</li>
+                </ol>
+            </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 case-card">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Caso 3: Carla García - TIP</h2>
+            <p class="text-gray-700 mb-2"><span class="font-semibold">Nombre:</span> Carla García</p>
+            <p class="text-gray-700 mb-2"><span class="font-semibold">Edad:</span> 9 años</p>
+            <p class="text-gray-700 mb-2"><span class="font-semibold">Grado:</span> 4to</p>
+            <p class="text-gray-700 mb-2"><span class="font-semibold">Centro Educativo:</span> Escuela Básica Vitalina Mordan De Cruz</p>
+            <p class="text-gray-700 mb-2"><span class="font-semibold">Ubicación:</span> Barrio Azul o primeros #2</p>
+            <p class="text-gray-700 mb-2"><span class="font-semibold">Teléfono del responsable:</span> 829 436 5658</p>
+            <h3 class="text-lg font-semibold text-gray-800 mt-4 mb-2">Historial Clínico:</h3>
+            <p class="text-gray-700 mb-4">
+                Carla es referida por su maestra debido a preocupaciones sobre su retraimiento social y ansiedad. Es una niña callada y reservada en la escuela, con pocos amigos. Sus padres informan que es muy sensible y se preocupa fácilmente.
+            </p>
+            <h3 class="text-lg font-semibold text-gray-800 mt-4 mb-2">Pruebas Aplicadas:</h3>
+            <ul class="list-disc list-inside text-gray-700 mb-4">
+                <li>TIP (Test de Inteligencia para Niños): Evalúa capacidades cognitivas en tres áreas:
+                    <ol class="list-decimal list-inside ml-4 mt-1">
+                        <li><span class="font-semibold">Comprensión Verbal:</span> Capacidad para comprender y expresar ideas verbales.</li>
+                        <li><span class="font-semibold">Razonamiento Perceptual:</span> Habilidad para analizar problemas visuales.</li>
+                        <li><span class="font-semibold">Memoria de Trabajo:</span> Retención y manipulación de información.</li>
+                    </ol>
+                </li>
+            </ul>
+            <div class="test-section">
+                <h4 class="test-title">Test de Inteligencia (TIP) - Resultados Detallados:</h4>
+                <ol class="list-decimal list-inside text-gray-700">
+                    <li class="response-item">Comprensión Verbal:
+                        <ol type="a" class="list-lower-alpha list-inside ml-4">
+                            <li class="correct-response">¿Qué es "familia"?: "Las personas que viven contigo".</li>
+                            <li class="correct-response">Explica: "En boca cerrada no entran moscas". "Es mejor no hablar mucho".</li>
+                            <li class="correct-response">¿Qué significa "alegría"?: "Estar feliz".</li>
+                            <li class="correct-response">¿Qué es "tiempo"?: "Las horas que pasan".</li>
+                            <li class="correct-response">Explica: "A mal tiempo, buena cara". "Hay que estar feliz aunque llueva".</li>
+                        </ol>
+                    </li>
+                    <li class="response-item">Razonamiento Perceptual:
+                        <ol type="a" class="list-lower-alpha list-inside ml-4">
+                            <li class="correct-response">(Serie: ▲ ▼ ▲ ▼, ¿qué sigue?). Carla eligió "▲".</li>
+                            <li class="correct-response">(Completar dibujo de un pez). Carla seleccionó la pieza correcta.</li>
+                            <li class="correct-response">(Identificar error en una imagen). Carla acertó.</li>
+                            <li class="correct-response">(Patrón: ◇ ◆ ◇ ◆). Carla eligió "◇".</li>
+                            <li class="correct-response">(Diferencia entre 5 figuras). Carla acertó.</li>
+                        </ol>
+                    </li>
+                    <li class="response-item">Memoria de Trabajo:
+                        <ol type="a" class="list-lower-alpha list-inside ml-4">
+                            <li class="correct-response">Repite: 6-2-9-4. Carla dijo: "6-2-9-4".</li>
+                            <li class="correct-response">Recuerda: "nube, estrella, árbol, río". Carla las nombró todas.</li>
+                            <li class="correct-response">Repite 3-5-1-7 en orden inverso. Carla dijo: "7-1-5-3".</li>
+                            <li class="correct-response">Señala 4 objetos ocultos. Carla acertó todos.</li>
+                            <li class="correct-response">Suma 1 a: 2-4-6. Carla dijo: "3-5-7".</li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mt-4 mb-2">Informe de Resultados:</h3>
+            <p class="report-text">
+                Carla García, de 9 años, demuestra un desempeño excepcional en el TIP, con un perfil cognitivo sólido y homogéneo. En <span class="report-highlight">Comprensión Verbal</span>, responde con precisión a definiciones concretas ("familia": "Las personas que viven contigo"; "tiempo": "Las horas que pasan") y abstractas ("alegría": "Estar feliz"), y explica refranes complejos ("En boca cerrada...", "A mal tiempo...") de manera clara, reflejando un desarrollo verbal avanzado y una capacidad notable para razonar con conceptos diversos. En <span class="report-highlight">Razonamiento Perceptual</span>, acierta en todas las tareas (patrones, ensamblaje, detección de errores, diferencias), mostrando una habilidad visuoespacial sobresaliente y una atención al detalle que le permite resolver problemas gráficos con facilidad. En <span class="report-highlight">Memoria de Trabajo</span>, su rendimiento es impecable: recuerda secuencias auditivas y visuales, invierte números y realiza cálculos mentales sin errores, indicando una memoria operativa robusta y una excelente capacidad para procesar información bajo demanda.<br><br>
+                Estos resultados descartan limitaciones cognitivas como causa de su retraimiento y ansiedad; su perfil sugiere que las dificultades son emocionales, posiblemente ansiedad social o sensibilidad extrema. Podría evitar interactuar por miedo al juicio, a pesar de su competencia intelectual. Se recomienda:
+                <ol class="list-decimal list-inside ml-4 mt-2">
+                    <li>Evaluación psicológica para identificar ansiedad social o timidez.</li>
+                    <li>Terapia cognitivo-conductual con técnicas de exposición gradual.</li>
+                    <li>Intervención escolar con actividades grupales supervisadas.</li>
+                    <li>Apoyo familiar para reforzar su confianza en entornos sociales.</li>
+                </ol>
+            </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 case-card">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Caso 4: Ana (12 años) - CPS</h2>
+            <p class="text-gray-700 mb-2"><span class="font-semibold">Nombre:</span> Ana</p>
+            <p class="text-gray-700 mb-2"><span class="font-semibold">Edad:</span> 12 años</p>
+            <p class="text-gray-700 mb-2"><span class="font-semibold">Grado:</span> 6to</p>
+            <p class="text-gray-700 mb-2"><span class="font-semibold">Centro Educativo:</span> </p>
+            <p class="text-gray-700 mb-2"><span class="font-semibold">Ubicación:</span> </p>
+            <p class="text-gray-700 mb-2"><span class="font-semibold">Teléfono del responsable:</span> </p>
+            <h3 class="text-lg font-semibold text-gray-800 mt-4 mb-2">Historial Clínico:</h3>
+            <p class="text-gray-700 mb-4">
+                Ana es referida por su madre debido a preocupaciones sobre su aislamiento social. En la escuela, es callada y reservada, con pocos amigos. Su madre reporta que es muy sensible y se preocupa mucho por lo que piensan los demás. No hay antecedentes familiares de dificultades de aprendizaje.
+            </p>
+            <h3 class="text-lg font-semibold text-gray-800 mt-4 mb-2">Pruebas Aplicadas:</h3>
+            <ul class="list-disc list-inside text-gray-700 mb-4">
+                <li>CPS (Cuestionario de Personalidad Situacional): Evalúa rasgos de personalidad en tres dimensiones:
+                    <ol class="list-decimal list-inside ml-4 mt-1">
+                        <li><span class="font-semibold">Ansiedad Social:</span> Nivel de malestar en contextos sociales.</li>
+                        <li><span class="font-semibold">Extraversión:</span> Tendencia a buscar interacción social.</li>
+                        <li><span class="font-semibold">Autocontrol:</span> Capacidad para regular impulsos.</li>
+                    </ol>
+                </li>
+            </ul>
+            <div class="test-section">
+                <h4 class="test-title">Cuestionario de Personalidad Situacional (CPS) - Resultados Detallados:</h4>
+                <ol class="list-decimal list-inside text-gray-700">
+                    <li class="response-item"><span class="font-semibold">Ansiedad Social:</span>
+                        <ol type="a" class="list-lower-alpha list-inside ml-4">
+                            <li class="correct-response">Me pongo nerviosa al hablar con desconocidos. (Verdadero)</li>
+                            <li class="correct-response">Me preocupa que otros me critiquen. (Verdadero)</li>
+                            <li class="correct-response">Evito situaciones con mucha gente. (Verdadero)</li>
+                            <li class="correct-response">Me siento incómoda en grupos grandes. (Verdadero)</li>
+                            <li class="correct-response">Prefiero quedarme callada a hablar en público. (Verdadero)</li>
+                        </ol>
+                    </li>
+                    <li class="response-item"><span class="font-semibold">Extraversión:</span>
+                        <ol type="a" class="list-lower-alpha list-inside ml-4">
+                            <li class="incorrect-response">Me gusta conocer gente nueva. (Falso)</li>
+                            <li class="incorrect-response">Disfruto ser el centro de atención. (Falso)</li>
+                            <li class="incorrect-response">Soy muy sociable. (Falso)</li>
+                            <li class="incorrect-response">Me siento bien en fiestas o reuniones. (Falso)</li>
+                            <li class="incorrect-response">Hablar con otros me da energía. (Falso)</li>
+                        </ol>
+                    </li>
+                    <li class="response-item"><span class="font-semibold">Autocontrol:</span>
+                        <ol type="a" class="list-lower-alpha list-inside ml-4">
+                            <li class="correct-response">Pienso antes de actuar. (Verdadero)</li>
+                            <li class="correct-response">Controlo mis emociones fácilmente. (Verdadero)</li>
+                            <li class="correct-response">Espero mi turno sin problema. (Verdadero)</li>
+                            <li class="correct-response">Me mantengo tranquila aunque esté molesta. (Verdadero)</li>
+                            <li class="correct-response">Evito reaccionar sin pensar. (Verdadero)</li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mt-4 mb-2">Informe de Resultados:</h3>
+            <p class="report-text">
+                Ana, de 12 años, presenta un perfil de personalidad definido en el CPS, con rasgos distintivos. En <span class="report-highlight">Ansiedad Social</span>, sus respuestas uniformemente positivas ("Me pongo nerviosa...", "Me preocupa...", "Evito...", "Me siento incómoda...", "Prefiero quedarme callada...") reflejan un nivel elevado de malestar en situaciones sociales, coherente con su aislamiento y sensibilidad reportados. Este patrón sugiere una fuerte aversión a la interacción, posiblemente por temor al rechazo o la crítica. En <span class="report-highlight">Extraversión</span>, su rechazo total a afirmaciones sociales ("Me gusta conocer...", "Disfruto ser...", "Soy muy sociable...", "Me siento bien...", "Hablar con otros...") indica una introversión extrema, prefiriendo la soledad como mecanismo de protección frente a la ansiedad. En <span class="report-highlight">Autocontrol</span>, muestra una fortaleza notable con respuestas positivas consistentes ("Pienso antes...", "Controlo...", "Espero...", "Me mantengo...", "Evito..."), evidenciando una capacidad sólida para regular sus impulsos y emociones, lo que implica que su retraimiento es una elección consciente, no una reacción impulsiva.<br><br>
+                Su ansiedad social podría hacer que evite participar en clase o formar amistades, mientras que su autocontrol le permite ocultar su malestar sin explosiones emocionales. Se recomienda:
+                <ol class="list-decimal list-inside ml-4 mt-2">
+                    <li>Terapia cognitivo-conductual para reducir ansiedad con exposición gradual.</li>
+                    <li>Entrenamiento en habilidades sociales en entornos seguros (ej., talleres grupales).</li>
+                    <li>Apoyo escolar con tareas colaborativas de baja presión.</li>
+                    <li>Orientación familiar para fomentar interacciones positivas.</li>
+                </ol>
+            </p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 case-card">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Caso 5: Pedro (11 años) - CPS</h2>
+            <p class="text-gray-700 mb-2"><span class="font-semibold">Nombre:</span> Pedro</p>
+            <p class="text-gray-700 mb-2"><span class="font-semibold">Edad:</span> 11 años</p>
+            <p class="text-gray-700 mb-2"><span class="font-semibold">Grado:</span> 5to</p>
+            <p class="text-gray-700 mb-2"><span class="font-semibold">Centro Educativo:</span> </p>
+            <p class="text-gray-700 mb-2"><span class="font-semibold">Ubicación:</span> </p>
+            <p class="text-gray-700 mb-2"><span class="font-semibold">Teléfono del responsable:</span> </p>
+            <h3 class="text-lg font-semibold text-gray-800 mt-4 mb-2">Historial Clínico:</h3>
+            <p class="text-gray-700 mb-4">
+                Pedro es derivado por su padre debido a comportamientos desafiantes y agresivos. En la escuela, muestra dificultades para seguir reglas y respetar la autoridad. Su padre reporta que es impulsivo y tiene rabietas frecuentes.
+            </p>
+            <h3 class="text-lg font-semibold text-gray-800 mt-4 mb-2">Pruebas Aplicadas:</h3>
+            <ul class="list-disc list-inside text-gray-700 mb-4">
+                <li>CPS (Cuestionario de Personalidad Situacional): Evalúa rasgos de personalidad en tres dimensiones:
+                    <ol class="list-decimal list-inside ml-4 mt-1">
+                        <li><span class="font-semibold">Agresividad:</span> Tendencia a reaccionar con enojo o confrontación.</li>
+                        <li><span class="font-semibold">Autocontrol:</span> Capacidad para regular impulsos y emociones.</li>
+                        <li><span class="font-semibold">Empatía:</span> Sensibilidad hacia los sentimientos de otros.</li>
+                    </ol>
+                </li>
+            </ul>
+            <div class="test-section">
+                <h4 class="test-title">Cuestionario de Personalidad Situacional (CPS) - Resultados Detallados:</h4>
+                <ol class="list-decimal list-inside text-gray-700">
+                    <li class="response-item"><span class="font-semibold">Agresividad:</span>
+                        <ol type="a" class="list-lower-alpha list-inside ml-4">
+                            <li class="correct-response">Me enojo rápidamente. (Verdadero)</li>
+                            <li class="correct-response">Reacciono mal si me provocan. (Verdadero)</li>
+                            <li class="correct-response">A veces grito cuando estoy frustrado. (Verdadero)</li>
+                            <li class="correct-response">Me cuesta calmarme cuando estoy molesto. (Verdadero)</li>
+                            <li class="correct-response">Puedo pelear si alguien me molesta. (Verdadero)</li>
+                        </ol>
+                    </li>
+                    <li class="response-item"><span class="font-semibold">Autocontrol:</span>
+                        <ol type="a" class="list-lower-alpha list-inside ml-4">
+                            <li class="incorrect-response">Me calmo fácilmente. (Falso)</li>
+                            <li class="incorrect-response">Evito problemas con otros. (Falso)</li>
+                            <li class="incorrect-response">Controlo mi enojo. (Falso)</li>
+                            <li class="incorrect-response">Pienso antes de reaccionar. (Falso)</li>
+                            <li class="incorrect-response">Espero mi turno sin impacientarme. (Falso)</li>
+                        </ol>
+                    </li>
+                    <li class="response-item"><span class="font-semibold">Empatía:</span>
+                        <ol type="a" class="list-lower-alpha list-inside ml-4">
+                            <li class="correct-response">Me importa si alguien está triste. (Verdadero)</li>
+                            <li class="incorrect-response">Entiendo por qué otros se enojan. (Falso)</li>
+                            <li class="correct-response">Me siento mal si veo a alguien llorando. (Verdadero)</li>
+                            <li class="incorrect-response">Puedo ponerme en el lugar de otros. (Falso)</li>
+                            <li class="incorrect-response">Sé cómo se sienten los demás. (Falso)</li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-800 mt-4 mb-2">Informe de Resultados:</h3>
+            <p class="report-text">
+                Pedro, de 11 años, muestra un perfil de personalidad desafiante en el CPS, con patrones claros. En <span class="report-highlight">Agresividad</span>, sus respuestas positivas ("Me enojo rápidamente", "Reacciono mal...", "A veces grito...", "Me cuesta calmarme...", "Puedo pelear...") confirman una alta tendencia a reaccionar con enojo y confrontación, alineada con sus comportamientos agresivos y rabietas reportados. En <span class="report-highlight">Autocontrol</span>, su rechazo total a afirmaciones de regulación ("Me calmo...", "Evito...", "Controlo...", "Pienso...", "Espero...") refleja una impulsividad severa, lo que explica su dificultad para seguir reglas o tolerar frustraciones sin explotar. En <span class="report-highlight">Empatía</span>, presenta un perfil mixto: muestra empatía emocional ("Me importa si alguien está triste", "Me siento mal..."), pero carece de empatía cognitiva ("Entiendo...", "Puedo ponerme...", "Sé cómo se sienten..."), indicando que siente las emociones ajenas pero no las comprende ni las usa para mediar conflictos.<br><br>
+                Esta combinación de alta agresividad, bajo autocontrol y empatía parcial genera enfrentamientos frecuentes y desobediencia, ya que reacciona sin reflexionar y no considera las perspectivas de otros. Se recomienda:
+                <ol class="list-decimal list-inside ml-4 mt-2">
+                    <li>Terapia conductual para manejar la ira (ej., técnicas de respiración).</li>
+                    <li>Estrategias escolares con refuerzos positivos y límites claros.</li>
+                    <li>Entrenamiento en empatía cognitiva mediante juegos de roles.</li>
+                    <li>Apoyo familiar para establecer rutinas y disciplina consistente.</li>
+                </ol>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
